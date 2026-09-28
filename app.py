@@ -5,9 +5,10 @@ app = Flask(__name__)
 # CORS:======================================================================================================================
 @app.after_request
 def add_cors_response_headers(response):
-    response["Access-Control-Allow-Origin"]="*"
-    response["Access-Control-Allow-Methods"]= "POST, Get, OPTIONS"
-    response["Access-Control-Allow-Headers"]= "Content-Type"                    # js line 9
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Methods"] = "POST, GET, OPTIONS"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    return response
 
 @app.before_request
 def handle_preflight():
