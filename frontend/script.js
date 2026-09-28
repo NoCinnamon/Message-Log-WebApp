@@ -10,6 +10,6 @@ button.addEventListener = ('click', function() {
         },
         body: JSON.stringify({
             message:message
-        });
+        })
     });
 })
