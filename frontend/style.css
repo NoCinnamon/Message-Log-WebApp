@@ -15,8 +15,9 @@ main {
   box-sizing: border-box;
 }
 
-.entry {
+.left-section {
   flex: 1;
+  position: relative;
 }
 
 h1 {
@@ -64,6 +65,29 @@ button:hover {
 
 button:active {
   background: #c99b00;
+}
+
+#dogIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+#dogIcon img {
+  display: block;
+  margin-left: auto;
+  width: 40px;
+  height: auto;
+}
+#dogIcon p {
+  margin: 4px 0 0;
+  font-size: 11px;
+  white-space: nowrap;
+  color: black;
+}
+#dogIcon a:link,
+#dogIcon a:visited {
+  color: black;
 }
 
 .breed-card {
