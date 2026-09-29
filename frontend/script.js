@@ -12,6 +12,8 @@ sendButton.addEventListener('click', function() {
     body: JSON.stringify({
         message:message
     })
+  }).then(() => {
+    getBreedList();
   });
 });
 
