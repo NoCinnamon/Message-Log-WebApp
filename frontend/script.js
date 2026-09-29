@@ -18,7 +18,7 @@ sendButton.addEventListener('click', function() {
 });
 
 
-// get the message from server and display it as list on page. ??
+// get the message from server and display it as list on page. 
 function getBreedList() {
   fetch("http://127.0.0.1:5000/breeds")
   .then((response)=>{
